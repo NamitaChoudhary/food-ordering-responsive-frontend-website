@@ -1,0 +1,287 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position:  sticky;
+   top: 0;
+   z-index: 10;
+    justify-content: space-evenly;
+   
+}
+/* logo and image */
+#logo{
+
+    margin:7px 7px;
+    float: right;
+}
+#logo img{
+
+    margin: 5px 4px;;
+    height: 74px;
+
+}
+#navbar::before
+{
+    content: "";
+     background-color:rgba(241, 211, 40, 0.849);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+  
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    justify-content: right;
+   
+}
+#navbar ul li a{
+    display: block;
+    padding:3px 10px ;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left:  67px;
+
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+    
+}
+/* home section */
+#home{
+    display: flex;
+    height: 749px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(image/w4.jpg);
+    background-repeat: no-repeat center center/cover;
+    height: 755px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.89;
+    background-attachment: fixed;
+
+}
+#home h1{
+    text-align: center;
+    color:white;
+    
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+}
+/* services */
+.services-container{
+    padding: 52px 0;
+    
+    background-color: rgba(231, 161, 10, 0.096);
+}
+#services{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.box{
+   
+    margin: 3px 6px;
+    border: 1px solid rgba(172, 168, 168, 0.308);
+    object-fit: cover;
+    border-radius: 12px;
+    width: 261px;
+   
+}
+#services .box:hover{
+    box-shadow: 0 2px 20px rgb(235, 154, 5);
+    cursor: pointer;
+}
+
+#services .box img{
+    height: 180px;
+    display: block;
+    margin: auto;
+  
+   opacity: 3;
+   object-fit: cover;
+   border-radius: inherit;
+   border-bottom-right-radius:0px ;
+   border-bottom-left-radius:0px ;
+}
+.box h3{
+    text-align: center;
+    color: rgb(51, 49, 49);
+    font-family: 'Baloo Bhaina 2', cursive;
+   font-size: 23px;
+   font-weight: lighter;
+
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.h-secondary{
+
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(250, 223, 68, 0.918);
+    
+    border-radius: 15px;
+    margin: 17px;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(253, 215, 0, 0.966);
+}
+.center{
+    text-align: center;
+}
+/* content */
+.services-container h3{
+    text-align: center;
+    color: rgba(51, 49, 49, 0.856);
+    font-family: 'Baloo Bhaina 2', cursive;
+   font-size: 23px;
+   font-weight: lighter;
+  
+}
+.services-container h1{
+    text-align: center;
+    font-size: 41px;
+    color: #333;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box2 .box{
+    height: 323px;
+    
+}
+.box2 img{
+    width: 261px;
+    height: 325px;
+    border-radius: 9px;
+    opacity: 1.8;
+    
+}
+#content .box:hover{
+    box-shadow: 0 2px 20px rgb(3, 3, 3);
+    cursor: pointer;
+
+}
+/* order now */
+#clients-sections{
+    padding: 50px 0px;
+}
+#clients-sections{
+   
+   
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(image/bw1.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+}
+#clients-sections .btn{
+    width: 146px;
+    box-shadow: 0 2px 20px rgba(241, 238, 230, 0.61)
+}
+#clients-sections .btn:hover{
+    box-shadow: 0 2px 20px rgba(255, 222, 218, 0.979)
+}
+
+/* contact section */
+#contact{
+    position: relative;
+    padding: 50px 0px;
+    background-color: rgba(231, 161, 10, 0.096);
+   
+}#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+#contact-box input,
+#contact-box textarea{
+
+    width: 100%;
+    padding: 0.5rem;
+    margin: 3px;
+    font-weight: bold;
+    border-color: transparent;
+    
+}
+#contact-box form{
+    width: 30%;
+
+}
+#contact-box .btn{
+    width: 105%;
+    margin: 3px;
+    border: 2px solid rgba(231, 161, 10, 0.692);
+}
+#contact-box .btn:hover{
+    box-shadow: 0 2px 20px rgb(235, 154, 5)
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
